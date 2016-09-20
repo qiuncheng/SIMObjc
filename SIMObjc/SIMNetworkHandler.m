@@ -7,7 +7,7 @@
 //
 
 #import "SIMNetworkHandler.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 
 static NSString* const reachabilityDomain = @"http://www.baidu.com";

@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "SIMMasterViewController.h"
 #import "SIMDBHandler.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 @interface AppDelegate ()
 
 @end
@@ -34,7 +34,7 @@
     [navigationController.navigationBar setNeedsLayout];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
-    
+
     //判断是否第一次进入
     NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
    if (![[userDefault objectForKey:@"firstFlag"] boolValue]) {

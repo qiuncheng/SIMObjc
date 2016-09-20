@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80CEFD9C8672CE892E2631BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8AFDDDD14F2EE9A5228A84 /* libPods.a */; };
+		3E97A6977776068A6B2CEE83 /* Pods_SIMObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53995686AB081F775A3F0F60 /* Pods_SIMObjc.framework */; };
 		ED19471F1CB506CB00ECE72F /* SIMDBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ED19471E1CB506CB00ECE72F /* SIMDBHandler.m */; };
 		ED1947221CB5104F00ECE72F /* SIMNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1947211CB5104F00ECE72F /* SIMNetworkHandler.m */; };
 		ED1947251CB5110C00ECE72F /* SIMMasterIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */; };
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C8AFDDDD14F2EE9A5228A84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C5C6635883309D0621E14B4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0DA0D7C3D715AF2A0A1C3E3C /* Pods-SIMObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMObjc.release.xcconfig"; path = "Pods/Target Support Files/Pods-SIMObjc/Pods-SIMObjc.release.xcconfig"; sourceTree = "<group>"; };
+		53995686AB081F775A3F0F60 /* Pods_SIMObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIMObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E265F3E6B5F1D243F40B5F77 /* Pods-SIMObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIMObjc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIMObjc/Pods-SIMObjc.debug.xcconfig"; sourceTree = "<group>"; };
 		ED19471D1CB506CB00ECE72F /* SIMDBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMDBHandler.h; sourceTree = "<group>"; };
 		ED19471E1CB506CB00ECE72F /* SIMDBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMDBHandler.m; sourceTree = "<group>"; };
 		ED1947201CB5104F00ECE72F /* SIMNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMNetworkHandler.h; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CEFD9C8672CE892E2631BD /* libPods.a in Frameworks */,
+				3E97A6977776068A6B2CEE83 /* Pods_SIMObjc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,21 +94,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12D5468F18CA2B466C7C655B /* Pods */ = {
+		7C4607551E2AAF14DC2079F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */,
-				C5C6635883309D0621E14B4A /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DB306803CCB3955F8CC1A791 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7C8AFDDDD14F2EE9A5228A84 /* libPods.a */,
+				53995686AB081F775A3F0F60 /* Pods_SIMObjc.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811A3E10713A2A58F4EA6E2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E265F3E6B5F1D243F40B5F77 /* Pods-SIMObjc.debug.xcconfig */,
+				0DA0D7C3D715AF2A0A1C3E3C /* Pods-SIMObjc.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		ED19471C1CB5062000ECE72F /* catagory */ = {
@@ -136,8 +136,8 @@
 				ED70F0071CB3F86F00CE8B55 /* SIMObjc */,
 				ED70F0211CB3F86F00CE8B55 /* SIMObjcTests */,
 				ED70F0061CB3F86F00CE8B55 /* Products */,
-				12D5468F18CA2B466C7C655B /* Pods */,
-				DB306803CCB3955F8CC1A791 /* Frameworks */,
+				811A3E10713A2A58F4EA6E2C /* Pods */,
+				7C4607551E2AAF14DC2079F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,11 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED70F0281CB3F86F00CE8B55 /* Build configuration list for PBXNativeTarget "SIMObjc" */;
 			buildPhases = (
-				69DB444E83AFEE08D4584700 /* Check Pods Manifest.lock */,
+				25832F70B0CE963BB96951DD /* [CP] Check Pods Manifest.lock */,
 				ED70F0011CB3F86F00CE8B55 /* Sources */,
 				ED70F0021CB3F86F00CE8B55 /* Frameworks */,
 				ED70F0031CB3F86F00CE8B55 /* Resources */,
-				30862A12B1ED41A6ED250A4F /* Copy Pods Resources */,
+				2EF8EBA483A8580050CA1F48 /* [CP] Embed Pods Frameworks */,
+				3D10C75FAC44D73EDDBBF877 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,34 +331,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30862A12B1ED41A6ED250A4F /* Copy Pods Resources */ = {
+		25832F70B0CE963BB96951DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69DB444E83AFEE08D4584700 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2EF8EBA483A8580050CA1F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SIMObjc/Pods-SIMObjc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D10C75FAC44D73EDDBBF877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SIMObjc/Pods-SIMObjc-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -502,13 +518,13 @@
 		};
 		ED70F0291CB3F86F00CE8B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = E265F3E6B5F1D243F40B5F77 /* Pods-SIMObjc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,13 +533,13 @@
 		};
 		ED70F02A1CB3F86F00CE8B55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5C6635883309D0621E14B4A /* Pods.release.xcconfig */;
+			baseConfigurationReference = 0DA0D7C3D715AF2A0A1C3E3C /* Pods-SIMObjc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

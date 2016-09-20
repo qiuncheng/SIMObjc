@@ -7,7 +7,7 @@
 //
 
 #import "SIMMasterTableViewCell.h"
-#import <UIView+FLKAutoLayout.h>
+#import "UIView+FLKAutoLayout.h"
 #import "SIMMasterIssueModel.h"
 @implementation SIMMasterTableViewCell
 

@@ -7,16 +7,18 @@
 //
 
 #import "SIMMasterViewController.h"
-#import <UIView+FLKAutoLayout.h>
+#import "UIView+FLKAutoLayout.h"
 #import "SIMMasterDelegate.h"
 #import "SIMDBHandler.h"
 #import "SIMMasterDataSouce.h"
 #import "SIMSubIssueModel.h"
 #import "SIMSubIssueTableViewCell.h"
-#import <UIView+FLKAutoLayoutDebug.h>
-#import <JBWebViewController.h>
+#import "UIView+FLKAutoLayoutDebug.h"
+//#import <JBWebViewController.h>
 #import "SIMMoreViewController.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
+#import <SafariServices/SafariServices.h>
+
 @interface SIMMasterViewController ()<SIMDataStateFresh>
 {
     SIMMasterDelegate* masterDelegate;
@@ -45,10 +47,18 @@
         masterDelegate = [[SIMMasterDelegate alloc] initWithDataSouce:data SelectedHandler:^(UITableView *tableView, NSIndexPath *indexPath) {
             SIMSubIssueTableViewCell* cell = (SIMSubIssueTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
             SIMSubIssueModel* subModel = cell.subModel;
-            JBWebViewController* webController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:subModel.url] mode:JBWebViewTitleModeNative];
-            [webController setWebTitle:subModel.name];
-            [webController setLoadingString:subModel.name];
-            [webController showFromNavigationController:self.navigationController];
+
+//            UIViewController* webController = [[UIViewController alloc] initWithUrl:[NSURL URLWithString:subModel.url] mode:JBWebViewTitleModeNative];
+//            [webController setWebTitle:subModel.name];
+//            [webController setLoadingString:subModel.name];
+//            [webController showFromNavigationController:self.navigationController];
+
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            BOOL safariReadingMode = [userDefaults boolForKey:kSafariReadingMode];
+            NSURL *url = [NSURL URLWithString:subModel.url];
+            SFSafariViewController *safariViewController = [[SFSafariViewController alloc]initWithURL:url entersReaderIfAvailable:safariReadingMode];
+            [self presentViewController:safariViewController animated:YES completion:nil];
+
         }];
                 
         [self.tableView reloadData];
