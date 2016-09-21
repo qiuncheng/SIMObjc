@@ -284,6 +284,8 @@
 				TargetAttributes = {
 					ED70F0041CB3F86F00CE8B55 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 57EP4P69NV;
+						ProvisioningStyle = Automatic;
 					};
 					ED70F01D1CB3F86F00CE8B55 = {
 						CreatedOnToolsVersion = 6.4;
@@ -521,6 +523,8 @@
 			baseConfigurationReference = E265F3E6B5F1D243F40B5F77 /* Pods-SIMObjc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57EP4P69NV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
@@ -536,6 +540,8 @@
 			baseConfigurationReference = 0DA0D7C3D715AF2A0A1C3E3C /* Pods-SIMObjc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 57EP4P69NV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
